@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CFM Security Policy</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1><i class="fas fa-shield-alt"></i> CFM Security Policy</h1>
+    </header>
+
+    <main>
+        <section class="policy" onclick="toggleSection('auth')">
+            <h2><i class="fas fa-user-shield"></i> Identification & Authentication Policy</h2>
+            <div id="auth" class="content">
+                <img src="https://www.onelogin.com/blog/wp-content/uploads/2023/05/advanced-authentication-blog-image.jpg.optimal.jpg" alt="Authentication" class="policy-image">
+                <p><strong>Security Objectives:</strong> Ensure only authorized individuals access company resources.</p>
+                <p><strong>Rules of Behavior:</strong> Users must authenticate using unique credentials and multi-factor authentication.</p>
+                <p><strong>System Requirements:</strong> Centralized identity management and session lock mechanisms.</p>
+            </div>
+        </section>
+
+        <section class="policy" onclick="toggleSection('password')">
+            <h2><i class="fas fa-key"></i> Password Policy</h2>
+            <div id="password" class="content">
+                <img src="https://f.hubspotusercontent30.net/hubfs/21126185/Imported_Blog_Media/6075b3a4c24cb3f94a5babe7_StrongDM-password-management-for-business-3.jpeg" alt="Password" class="policy-image">
+                <p><strong>Security Objectives:</strong> Prevent unauthorized access through weak passwords.</p>
+                <p><strong>Rules of Behavior:</strong> Strong passwords, regular updates, and two-factor authentication.</p>
+                <p><strong>System Requirements:</strong> Password encryption and strength enforcement.</p>
+            </div>
+        </section>
+
+        <section class="policy" onclick="toggleSection('aup')">
+            <h2><i class="fas fa-user"></i> Acceptable Use Policy (AUP)</h2>
+            <div id="aup" class="content">
+                <img src="https://www.compuquip.com/hs-fs/hubfs/AdobeStock_107451691.jpg?width=1200&name=AdobeStock_107451691.jpg" alt="Acceptable Use" class="policy-image">
+                <p><strong>Security Objectives:</strong> Define acceptable behavior when using company IT resources.</p>
+                <p><strong>Rules of Behavior:</strong> Prohibition of unauthorized software installation and guidelines for internet usage.</p>
+                <p><strong>System Requirements:</strong> User training and monitoring tools.</p>
+            </div>
+        </section>
+
+        <section class="policy" onclick="toggleSection('remote')">
+            <h2><i class="fas fa-laptop-house"></i> Remote Access Policy</h2>
+            <div id="remote" class="content">
+                <img src="https://www.parallels.com/blogs/ras/app/uploads/2021/03/remote-access.jpg" alt="Remote Access" class="policy-image">
+                <p><strong>Security Objectives:</strong> Secure remote access to company networks.</p>
+                <p><strong>Rules of Behavior:</strong> Use of secure VPN, multi-factor authentication, and restrictions on devices.</p>
+                <p><strong>System Requirements:</strong> Encryption, monitoring, and regular updates.</p>
+            </div>
+        </section>
+
+        <section class="policy" onclick="toggleSection('network')">
+            <h2><i class="fas fa-network-wired"></i> Network Maintenance Policy</h2>
+            <div id="network" class="content">
+                <img src="https://limblecmms.com/wp-content/uploads/Elements-of-a-great-maintenance-policy.jpg" alt="Network Maintenance" class="policy-image">
+                <p><strong>Security Objectives:</strong> Ensure network availability and integrity.</p>
+                <p><strong>Rules of Behavior:</strong> Scheduled updates, backups, and testing.</p>
+                <p><strong>System Requirements:</strong> Monitoring tools, patch management, and disaster recovery plans.</p>
+            </div>
+        </section>
+
+        <section class="policy" onclick="toggleSection('incident')">
+            <h2><i class="fas fa-exclamation-triangle"></i> Incident Handling Procedure</h2>
+            <div id="incident" class="content">
+                <img src="https://sprinto.com/wp-content/uploads/2023/05/What-does-incident-management-policy-include_-scaled.jpg" alt="Incident Handling" class="policy-image">
+                <p><strong>Security Objectives:</strong> Detect and respond to security incidents promptly.</p>
+                <p><strong>Rules of Behavior:</strong> Immediate reporting, system segregation, and collaboration.</p>
+                <p><strong>System Requirements:</strong> Incident response team, tracking, and post-incident analysis.</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

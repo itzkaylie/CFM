@@ -1,0 +1,79 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    color: #fff;
+}
+
+/* Header */
+header {
+    background: #111;
+    color: #00FF00;
+    text-align: center;
+    padding: 30px;
+    font-size: 36px;
+    font-weight: bold;
+    border-bottom: 2px solid #00FF00;
+}
+
+header h1 {
+    text-transform: uppercase;
+}
+
+/* Main Content */
+main {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Policy Sections */
+.policy {
+    background: #1c1c1c;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 255, 0, 0.2);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border-left: 5px solid #00FF00;
+}
+
+.policy:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 20px rgba(0, 255, 0, 0.5);
+}
+
+.policy h2 {
+    color: #00FF00;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.policy h2 i {
+    margin-right: 10px;
+}
+
+/* Content (Initially Hidden) */
+.content {
+    display: none;
+    background-color: #222;
+    padding: 15px;
+    border-radius: 8px;
+    border-top: 2px solid #00FF00;
+}
+
+.policy-image {
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Animation for Smooth Reveal */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
